@@ -53,4 +53,18 @@ You can create multi-line statements with () , [] , {}
           `'blue',`  
           `'green']`
 
-`j = 100 ; f = 200 ; k = 300`
+`j = 100 ; f = 200 ; k = 300`  
+
+### **Comments**
+`# this is a one line comment`  
+`"""`  
+`this`  
+`is `  
+`multi-line`  
+`comment`  
+`"""`
+
+***
+
+Websites i used :  
+* [Programiz](https://www.programiz.com/)
