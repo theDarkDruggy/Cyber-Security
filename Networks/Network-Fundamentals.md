@@ -16,7 +16,8 @@
 You can write **netstat -a** to command line.  
 **Socket :** A unique combination of port number and ip number , those are termed together as Socket.  
 **DNS Server :** DNS (Domain  Name System) is a system that converts urls to ip address and provides access.  
- 
+**ARP :**( *Address resolution Protocol* ) The Address Resolution Protocol (ARP) is a communication protocol used for discovering the link layer address, such as a MAC address, associated with a given internet layer address.    
+**RARP :**( *Reverse ARP* ) The Reverse Address Resolution Protocol (RARP) is an obsolete computer networking protocol used by a client computer to request its Internet Protocol (IPv4) address from a computer network, when all it has available is its link layer or hardware address, such as a MAC address.  
 
 ****
 *Websites that i used* :  
