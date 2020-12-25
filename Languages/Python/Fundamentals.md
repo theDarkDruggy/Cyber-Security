@@ -62,9 +62,60 @@ You can create multi-line statements with () , [] , {}
 `is `  
 `multi-line`  
 `comment`  
-`"""`
+`"""`  
+### **Python Data Types**
+type() function shows data type
+example:  
+`x = 1;print(type(x))`  
+`#output : <class 'int'>`  
+isinstance() funcstion returns True if object in  class.  
+example:   
+`print(isinstance(x,int))`  
+`#output : True`  
+#### **Numbers**
+
+* integer = 1
+* float = 1.1
+* complex = 1+1j
+
+#### **Lists**
+Lists are collections of multiple variables. You can change the list you created , you can add or delete new items.  
+list1 = ["hello world",1,1.5]
+
+#### **Tuples**
+Tuples are collections like lists but you can't change tuples. They are close to edit.  
+tuple1 = ("hello world",1,1.5)
+
+#### **Sets**
+Sets are unordered collections. Sets don't include same members.    
+`set1 = {1,2,2,3,3,3}`  
+`print(a)`  
+`#output : {1,2,3}`
+
+
+#### **Dictionaries**
+Dictionaries are collections that have key and value.  
+ dict1 = {"key1":"value1","key2":"value1"}
+
+*I will write a detailed text about **lists** , **tuples** , **sets** and **dictionaries**.*
+
+#### **Strings**
+Strings are collections of characters that inside of " ".  
+"Hello World"
 
 ***
+
+#### Type Conversations
+* float(5) = 5.0
+* int(5.6) = 5
+* int("5") = 5
+* str(5) = '5'
+* set([1,2,3,4,5]) = {1,2,3,4,5}
+* list((1,2,3,4,5)) = [1,2,3,4,5]
+* list("12345") = ["1","2","3","4","5"]
+* tuple([1,2,3,4,5]) = (1,2,3,4,5)
+* dict([1,2],[3,4],[5,' ']) = {1:2,3:4,5:''}
+
 
 Websites i used :  
 * [Programiz](https://www.programiz.com/)
