@@ -103,8 +103,6 @@ Dictionaries are collections that have key and value.
 Strings are collections of characters that inside of " ".  
 "Hello World"
 
-***
-
 #### Type Conversations
 * float(5) = 5.0
 * int(5.6) = 5
@@ -115,6 +113,10 @@ Strings are collections of characters that inside of " ".
 * list("12345") = ["1","2","3","4","5"]
 * tuple([1,2,3,4,5]) = (1,2,3,4,5)
 * dict([1,2],[3,4],[5,' ']) = {1:2,3:4,5:''}
+
+***
+
+
 
 
 Websites i used :  
