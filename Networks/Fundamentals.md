@@ -18,6 +18,16 @@ You can write **netstat -a** to command line.
 **DNS Server :** DNS (Domain  Name System) is a system that converts urls to ip address and provides access.  
 **ARP :**( *Address resolution Protocol* ) The Address Resolution Protocol (ARP) is a communication protocol used for discovering the link layer address, such as a MAC address, associated with a given internet layer address.    
 **RARP :**( *Reverse ARP* ) The Reverse Address Resolution Protocol (RARP) is an obsolete computer networking protocol used by a client computer to request its Internet Protocol (IPv4) address from a computer network, when all it has available is its link layer or hardware address, such as a MAC address.  
+**Internet :** Internet is a global network that was created with smaller networks.  
+**Web :** Web is only way of accessing information through the internet.  
+**URI :** URI means "uniform resource identifier"  A URI can be a name, locator, or both for an online resource whereas a URL is just the locator.
+
+### **How is websites opening**
+**when you open a url :**  
+* HTTP Request (request of getting HTML file)  
+    * When you send http request , it is converted to binary code and it is sent by internet to thee server. DNS servers turn URIs into IP addresses and binary code is forwarded there.
+* Servers Response
+    * Servers analyzes clients request and makes a decision. and sends file via internet to your public IP.
 
 ****
 *Websites that i used* :  
