@@ -14,14 +14,14 @@ syntax : `print(*objectsv, sep='' , end='' , file='' , flush=)`
 `print("Hello", end=' ' , flush=False)`  
 `sleep(5)`  
 `print("World")`  
-`#output : Hello was printed and World was printed after that without waiting`  
+#output : Hello was printed and World was printed after that without waiting  
 
 *example2 :*  
 `from time import sleep`  
 `print("Hello", end=' ' , flush=True)`  
 `sleep(5)`  
 `print("World")`  
-`#output : Hello was printed and World was printed after 5 seconds`
+#output : Hello was printed and World was printed after 5 seconds
 ### **Python Variables**
 `x = 1`  
 This is a python variable. Variables keep its Values. value could be a number , a string , a character , a list...  
@@ -67,11 +67,11 @@ You can create multi-line statements with () , [] , {}
 type() function shows data type
 example:  
 `x = 1;print(type(x))`  
-`#output : <class 'int'>`  
+#output : <class 'int'>  
 isinstance() funcstion returns True if object in  class.  
 example:   
 `print(isinstance(x,int))`  
-`#output : True`  
+#output : True  
 #### **Numbers**
 
 * integer = 1
@@ -90,7 +90,7 @@ tuple1 = ("hello world",1,1.5)
 Sets are unordered collections. Sets don't include same members.    
 `set1 = {1,2,2,3,3,3}`  
 `print(a)`  
-`#output : {1,2,3}`
+#output : {1,2,3}
 
 
 #### **Dictionaries**
