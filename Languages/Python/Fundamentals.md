@@ -114,10 +114,127 @@ Strings are collections of characters that inside of " ".
 * tuple([1,2,3,4,5]) = (1,2,3,4,5)
 * dict([1,2],[3,4],[5,' ']) = {1:2,3:4,5:''}
 
+
+### **Getting User Input**  
+*variable* = input(*input message*)  
+example:
+```
+x = input("What is your name? : ")
+print(f"Hello {x}")
+```
+
+### **Importing Modules**
+```
+import math
+print(math.pi)
+```
+```
+from math import pi
+print(pi)
+```
+```
+import math as m
+print(m.pi)
+```
+```
+from math import pi as PI
+print(PI)
+```
+Also you can import your python module/file.
+if you have a file in another file , you can add it to default modules directory.
+```
+import sys
+sys.path.append(../moduledir)
+import module
+```
+In this example , you can import module module in moduledir directory of parent directory.
+
+### **Operators**  
+
+#### *Arithmetic Operators*
+* '+' : summary
+* '-' : subtraction
+* '*' : multiplication
+* '/' : division
+* '%' : modulus
+* '//' : floor division
+* '**' : exponent  
+
+#### *Comparsion Operators*
+* '>' : grater than
+* '<' : smaller than
+* '==' : equal to
+* '>=' : grater than or equal to
+* '<=' : smaller than or equal to
+* '!=' : not equal to
+
+#### *Logical Operators*
+* 'and' = Logical and
+* 'or' = Logical or
+* 'not' = Logical not
+
+#### *Bitwise Operators*
+* '&' : Bitwise and
+* '|' : Bitwise or
+* '~' : Bitwise not
+* '^' : Bitwise xor
+* '>>': Bitwise right shift
+* '<<': Bitwise left shift
+
+#### *Assignment Operators*
+* '='
+* '+='
+* '-='
+* '*='
+* '/='
+* '%='
+* '//='
+* '**='
+* '&='
+* '|='
+* '~='
+* '^='
+* '>>='
+* '<<='
+
+example:
+```
+x = 10
+x **= 2
+print(x)
+#output = 100
+* x = x ** 2
+```
+
+#### *Identity and Membership Operators*
+* is = True if the operands are identical
+* is not = True if the operands are not identical
+* in = True if value/variable is found in the sequence
+* not in = True if value/variable is not found in the sequence
+
+### **Conditions**
+```
+if test statement:  
+    <commands>
+elif secondary test statement:
+    <commands>
+<other elif statements as much as you want>
+else :
+    <commands that will work if any if statement doesn't work>
+```
+**Don't forget , tab is very important.**
+### **Loops**
+```
+while statement:
+    <commands>
+#this will work if statement don't be false.
+for i in list:
+    <command>
+#everything that you did with i will do
+#for all elements of list.
+```
+
 ***
-
-
-
 
 Websites i used :  
 * [Programiz](https://www.programiz.com/)
