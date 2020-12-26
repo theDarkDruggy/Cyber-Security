@@ -233,6 +233,71 @@ for i in list:
 #everything that you did with i will do
 #for all elements of list.
 ```
+#### **Break , Continue and Pass**
+* break ends loops
+* continue skips commands under of it in a loop
+* Pass is a placeholder for empty statements
+
+### **Functions / Methods**
+A function do a specific task.
+Syntax:
+```
+def function_name(parameters):
+	"""docstring"""
+	<commands>
+```
+example:
+```
+def sayHello(str):
+    """
+    Just says hello to str
+    """
+    print(f"Hello {str}")
+
+sayHello("Nicola")
+```
+and You can access docstring of function like this.
+`print(sayHello.__doc__)`
+
+Functions can return anything
+```
+def square(x):
+    """
+    returns x**2
+    """
+    return x**2
+```
+You can work with no numbered arguments.
+```
+def summary(*numbers):
+    x = 0
+    for i in numbers:
+        x += i
+    return x
+print(summary(1,2,3,4,5))
+```
+#### **Recursion**
+If a function calls itself , it is a recursive function.
+```
+def fib(int):
+    if int <= 0:
+        return f"error , {int} is not an option."
+    elif int == 1:
+        return 1
+    elif int == 2:
+        return 1
+    else :
+        return fib(int-1)+fib(int-2)
+```
+#### **Lambda Functions**
+Syntax:
+`lambda argument : statement`
+example:
+```
+cube = lambda x : x**3
+print(cube(3))
+```
+
 
 ***
 
