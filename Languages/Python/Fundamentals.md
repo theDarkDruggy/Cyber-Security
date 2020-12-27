@@ -392,8 +392,31 @@ print(cube(3))
 * **str.find("a")** : finds and says index in the str but searches right to left
 * **str.join("x")** : adds x between all of characters
 * **str.strip()** : deletes characters like space and /n at right and left( there is functions like str.lstrip() and str.rstrip)
-
 *if you make a variable as str , you can get an error , these are placeholder.*
+### **File Handling**
+
+Opening file in current directory:  
+* f = open("text.txt")
+* with open("text.txt") as f
+
+Opening file in another directory:  
+* f = open("**dir**/text.txt")
+* with open("**dir**/text.txt") as f  
+
+f = open(**file**,**mode**,encoding=)
+**Modes**
+* r : reading mode
+* w : writing mode , if there is no file , it will be created.
+* x : exclusive creation
+* a : appending mode
+* t : text mode ( default )
+* b : binary mode
+* + : Open file for reading and writing
+* r+ : reading and writing
+* w+ : writing and reading
+* a+ : appending and reading
+
+
 ***
 
 Websites i used :  
