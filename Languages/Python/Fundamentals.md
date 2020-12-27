@@ -304,15 +304,8 @@ print(cube(3))
 ### **Lists**
 * **list** = [0,1,2]
 * **list[0]** = 0
+* **list[-1]** = 2
 * **list[0:2]**
-
-
-
-
-
-
-
-
  = 0,1
 * **list.append(*member*)** : adding a member to end of the list.
 * **list.insert(*index*,*member*)** : adding a member to index of list
@@ -323,6 +316,84 @@ print(cube(3))
 * **list.sort()** : sets indexes of members alphabetically
 * **list.revers()** : sets indexed of members revers.
 * **list.count(*member*)** : returns there is how many member elements in the list.
+* del list : deletes list
+
+### **Tuples**
+* **tuple** = (1,2,3)
+* **tuple** = 1 , 2 , 3
+    * a , b , c = tuple
+    * a = 1 , b = 2 , c = 3
+* **tuple** = (1,) : tuple with one element
+* **tuple** = (1,2,3)
+* **tuple[0]** = 1
+* **tuple[-1]** = 3
+* **tuple[0:2]** = (1,2)
+* **del tuple**  deletes tuple
+* **tuple.count(*member*)** : returns there is how many functions in the tuples
+* **tuple.index(*member*)** : returns index of member
+### **Sets**
+* **set** = {1,2,3}
+* **set.add(*element*)** : adds an element
+* **set.update(*elements*)** : adding elements that more than online
+* **set.discard(*element*)** : delete element , if there is no element , doesn't cause to error
+* **set.remove(*element*)** : delete element , if there is no element , causes to error
+* **set.pop()** : returns a random elements
+* **set.clear()** : deletes all elements
+* **set.union(*another set*)** : returns merged situation
+* **A | B** : returns merged situation
+* **A & B** : returns elements that is element of both
+* **A.intersection(B)** : returns elements that is element of both
+* **A - B** : returns difference between A and B
+* **A.difference(B)** : returns difference
+* **A ^ B** : returns (A | B) - (A & B)
+* **A.symmetric_difference(B)** : returns (A | B) - (A & B)
+### **Dictionaries**
+* **dict** = {'a':"apple",'b':"broadcast"}
+* **dict['a']** = "apple" #access
+* **dict['c']** = "car" #adding
+* **dict.pop(a)** : deletes a and returns key
+* **dict.clear()** : deletes all elements
+* **del dict** : deletes dict
+*Membership tests are done in keys ,  iterating through is done in values*
+
+
+### **Strings**
+* **string** = "123"
+* **string** = '123'
+* **string** = """123"""
+* **string** = '''123'''
+* **string[0]** = "1"
+* **string[-1]** = "3"
+* **string[0:2]** = "12"
+* **string =**f"text{variable}"
+* **str.capitalize()** : returns the situation that first letter is upper case
+* **str.upper()** : returns the situation that all of letters is upper case
+* **str.lower()** : returns the situation that all of letters is lower case
+* **str.swapcase()** : returns the situation that all of letters is another case
+* **str.title()** : returns  the situation that  first letters of words is upper case
+* **str.center(x)** : leaves blank at right and left x times
+* **str.center(x,'#')** : adds # at right and left x times
+* **str.ljust(x)** : text get closer to left and leaves blanks at right x times
+* **str.ljust(x,"y")**  :  text get closer to left and adds y to right x times
+* **str.rjust()**  : totally opposite of ljust
+* **str.replace('x','y')**  : turn x into y
+* **str.startswith('e')**  : if str starts with e , it returns true
+* **str.endswith("e")** : if str ends with e , ir returns true
+* **str.count("e")** : returns there is  how many e letters in str
+* **str.isalpha()** : returns true if there is only letters in str
+* **str.isdigit()** : returns true if there is only numbers in str
+* **str.isalnum()** : returns true if there is numbers and letters in str
+* **str.islower()** : returns true if all of letters is lower case
+* **str.isupper()** : totally opposite of islower()
+* **str.istitle()** : returns true if str is title
+* **str.isspace()** : returns true if there is only space character
+* **str.expandtabs(x)** : turns tabs into x space
+* **str.find('a')** : finds and says index in the str
+* **str.find("a")** : finds and says index in the str but searches right to left
+* **str.join("x")** : adds x between all of characters
+* **str.strip()** : deletes characters like space and /n at right and left( there is functions like str.lstrip() and str.rstrip)
+
+*if you make a variable as str , you can get an error , these are placeholder.*
 ***
 
 Websites i used :  
