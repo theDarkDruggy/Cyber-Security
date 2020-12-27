@@ -411,12 +411,17 @@ f = open(**file**,**mode**,encoding=)
 * a : appending mode
 * t : text mode ( default )
 * b : binary mode
-* + : Open file for reading and writing
+* +: Open file for reading and writing
 * r+ : reading and writing
 * w+ : writing and reading
 * a+ : appending and reading
 
-
+**Some Other Functions**
+**f.close()** : close the file  
+**f.read()** : reads all of file as a string  
+**f.readlines()** : reads lines as list  
+**f.write(*str*)** : writes to file  
+**f.writelines(*str*)** : writes  to file every member is one line  
 ***
 
 Websites i used :  
