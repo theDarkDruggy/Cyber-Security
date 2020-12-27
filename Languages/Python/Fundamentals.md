@@ -77,6 +77,9 @@ example:
 * integer = 1
 * float = 1.1
 * complex = 1+1j
+* binary = 0b10110
+* octal = 0o476
+* hexadecimal = 0xF
 
 #### **Lists**
 Lists are collections of multiple variables. You can change the list you created , you can add or delete new items.  
@@ -298,7 +301,28 @@ cube = lambda x : x**3
 print(cube(3))
 ```
 
+### **Lists**
+* **list** = [0,1,2]
+* **list[0]** = 0
+* **list[0:2]**
 
+
+
+
+
+
+
+
+ = 0,1
+* **list.append(*member*)** : adding a member to end of the list.
+* **list.insert(*index*,*member*)** : adding a member to index of list
+* **list.extend(*another list*)** : appending members to list from another list
+* **list.remove(*member*)** : deleting first member element of list
+* **list.pop(*index*)** : returns element of index. if you don't enter a parameter , returns the  last element.
+* **list.index(*member*)** : returns the first member  element
+* **list.sort()** : sets indexes of members alphabetically
+* **list.revers()** : sets indexed of members revers.
+* **list.count(*member*)** : returns there is how many member elements in the list.
 ***
 
 Websites i used :  
