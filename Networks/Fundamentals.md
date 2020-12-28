@@ -27,7 +27,39 @@ You can write **netstat -a** to command line.
 * HTTP Request (request of getting HTML file)  
     * When you send http request , it is converted to binary code and it is sent by internet to thee server. DNS servers turn URIs into IP addresses and binary code is forwarded there.
 * Servers Response
-    * Servers analyzes clients request and makes a decision. and sends file via internet to your public IP.
+    * Servers analyzes clients request and makes a decision. and sends file via internet to your port of your public IP.
+
+### **Some Facts about Networking**
+* Internet was invented by ARPANET in 1983.
+* Internet is controlled by 75 million servers.
+* Backbone of internet is made by 550, 000 miles of underwater cable.
+* About one billion computer systems are connected to internet.
+* Internet consists of five billion computing devices such as computers, phones, modems, switches, routers etc.
+* According to Google, Internet consists of 5 million Terabytes of data.
+* If the internet goes down for a day, approximately 200 billion emails and 3 billion Google search would have to wait.
+* Approximately 204 million emails per minute are send over Internet. 70% of them are spam.
+* 269 billion emails are sent per day.
+* for more you can visit [this site ...](https://www.geeksforgeeks.org/unknown-facts-of-networking/?ref=lbp)
+### **Network Goals**
+#### *Network Elements:*
+* At least two computers
+* Transmission medium between either wired or wireless
+* Protocols that will provide communication
+* Network Software such as Network operating system
+
+#### **Criteria**
+1. Performance
+    * Transit Time  
+    * Response Time
+    * These are affect performance :
+        * Number of Users
+        * Type of transmission medium
+        * Capability of Network
+        * Efficiency of Software
+2. Reliability (Dayaniklilik)
+    * Frequency of Failure
+    * Recovery from failures
+
 
 ****
 *Websites that i used* :  
