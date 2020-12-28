@@ -421,7 +421,62 @@ f = open(**file**,**mode**,encoding=)
 **f.read()** : reads all of file as a string  
 **f.readlines()** : reads lines as list  
 **f.write(*str*)** : writes to file  
-**f.writelines(*str*)** : writes  to file every member is one line  
+**f.writelines(*str*)** : writes  to file every member is one line
+
+### **Exception Handling**
+* Syntax Error  
+* Logical Errors ( Exception )  
+
+You can catch exceptions and you can block ending of program.
+```
+x = int(input("enter a number"))
+try :
+    print(2520 / x)
+except:
+    print("You entered a wrong number")
+finally:
+    #you can wwrite last commands here , this is
+    #optional
+```
+You can define your errors
+```
+# define Python user-defined exceptions
+class Error(Exception):
+    """Base class for other exceptions"""
+    pass
+
+
+class ValueTooSmallError(Error):
+    """Raised when the input value is too small"""
+    pass
+
+
+class ValueTooLargeError(Error):
+    """Raised when the input value is too large"""
+    pass
+
+
+# you need to guess this number
+number = 10
+
+# user guesses a number until he/she gets it right
+while True:
+    try:
+        i_num = int(input("Enter a number: "))
+        if i_num < number:
+            raise ValueTooSmallError
+        elif i_num > number:
+            raise ValueTooLargeError
+        break
+    except ValueTooSmallError:
+        print("This value is too small, try again!")
+        print()
+    except ValueTooLargeError:
+        print("This value is too large, try again!")
+        print()
+
+print("Congratulations! You guessed it correctly.")
+```
 ***
 
 Websites i used :  
