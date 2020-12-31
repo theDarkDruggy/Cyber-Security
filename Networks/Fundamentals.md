@@ -1,8 +1,8 @@
 # **Network Fundamentals**  
 
 **Open System :** A system that is able to connect with other systems.  
-**Closed System :** A system that is not able to connect with other systems.
-**Computer Networks :** An interconnection between multiple systems and multiple devices.  
+**Closed System :** A system that is not able to connect with other systems.  
+**Computer Networks :** An interconnection between multiple systems and multiple devices.   
 **Network Topology :** Shape of how network devices connecting.  
 **OSI**( *open Systems interconnection* ) : That defines protocols for communication and connection.  
 **Host Name :** Uniqe name of the device in the Network.  
@@ -56,10 +56,28 @@ You can write **netstat -a** to command line.
         * Type of transmission medium
         * Capability of Network
         * Efficiency of Software
-2. Reliability (Dayaniklilik)
+2. Reliability
     * Frequency of Failure
     * Recovery from failures
+3. Security
+    * Protecting data that was shared through network  
 
+#### **Goals**
+1. Resource Sharing
+    * Many organization has computers more than one , sharing data between these is one of goals.
+2. High Reliability
+    * Connecting many computers to each other without problem.
+3. Inter-Process communication
+    * Network must provide nearly errorless communication between devices in different geographical conditions.
+4. Flexible Access
+    * Files can be accessed from any computer in the network.
+### **Transmission Modes**
+* Simplex Mode
+    * in simplex mode , there is only one way to send data. Like radios.
+* Half-Duplex Mode
+    * in half-duplex mode , there is two way to send data but not at the same time.
+* Duplex Mode
+    * in duplex mode , there is two way to send data and you can send and receive data at the same time.
 
 ****
 *Websites that i used* :  
