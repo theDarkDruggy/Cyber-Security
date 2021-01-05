@@ -79,7 +79,49 @@ You can write **netstat -a** to command line.
 * Duplex Mode
     * in duplex mode , there is two way to send data and you can send and receive data at the same time.
 
-****
+### **Types of Transmission Media**
+* Guided Media
+	* High Speed
+	* Secure
+	* Used for short distances
+	1. Twisted Pair Cable
+		1. UTP (Unshielded Twisted Pair)
+			* Has Ability of block interferance
+			* This is used for telephonic applications
+			* Easy to install
+			* High-speed capacity
+			* Lower capacity and performance in comparsion to STP
+		2. STP (Shielded Twisted Pair)
+			* Performance is better than UTP
+			* Faster
+			* Difficult to install and manufacture
+			* More expensive
+			* Bulky
+	2. Coaxible Cable
+		* Advantages:
+			* High Bandwidth
+			* Better Noise Immunity
+			* Easy to install and expand
+			* Inexpensive
+		* Disadvantages:
+			* Single cable failure can disrupt entire network
+		* Analog TV Networks and Cable TV
+	3. Optical Fibre Cable
+		* Advantages:
+			* Increased capacity and bandwidth
+			* Lightweight
+			* Less signal Autantion
+			* Immunity to electromagnetic  interferance
+		* Disadvantages:
+			* Difficult to install and maintain
+			* High cost
+			* Fragile
+* Unguided Media
+	* The signal is broadcasted through air
+	* Less Secure
+	* Used for largerdistances
+
+***
 *Websites that i used* :  
 * [Geeks4Geeks](https://www.geeksforgeeks.org/computer-network-tutorials/)  
 * [Wikipedia](https://en.wikipedia.org/wiki/)
