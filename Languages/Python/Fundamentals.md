@@ -477,6 +477,36 @@ while True:
 
 print("Congratulations! You guessed it correctly.")
 ```
+### **OOP**
+#### **Defining Class**
+```
+class worker:
+	pass
+```
+#### **Defining Object**
+```
+Bob = worker()
+
+```
+_Example_
+```
+class worker:
+	#attributes
+	salary = 0
+	
+	#initializer function
+	def __init__(self,salary):
+		self.salary = salary
+
+	def setsalary(self,salary):
+		self.salary = salary
+	def getsalary(self):
+		return self.salary
+Bob = Worker(8500)
+Bob.setsalary(7500)
+print(Bob.getsalary())
+#output : 7500
+```
 ***
 
 Websites i used :  
