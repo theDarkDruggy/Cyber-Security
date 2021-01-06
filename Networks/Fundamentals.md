@@ -120,6 +120,20 @@ You can write **netstat -a** to command line.
 	* The signal is broadcasted through air
 	* Less Secure
 	* Used for largerdistances
+	1. Radiowaves
+		* Frequency range : 3KHz - 1GHz
+		* AM and FM radios use
+	2. Microwaves
+		* 1GHz - 300GHz
+		* Phone communication and television distribution use
+	3. Infrared
+		* 300 GHz - 400 THz
+		* TV remotes , Wireless , Mouse , Printer , Keyboard  
+**Unicast :** Communication between two computers.   
+**Broadcast :** Communication between one sender and receivers  
+	* Limited Broadcasting : In the same network  
+	* Direct Broadcasting : Broadcast to the another network  
+**Multicast :** One sender and multiple receivers  
 
 ***
 *Websites that i used* :  
