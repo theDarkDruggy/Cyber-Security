@@ -1,78 +1,53 @@
-# **Python Fundamentals**
-### **Basic Output**
-`print("Hello World")`  
-*output : Hello World*  
-syntax : `print(*objectsv, sep='' , end='' , file='' , flush=)`  
+# **Basic I/O**
+## _Basic Output_
+_print("Hello World")_  
+_output : Hello World_  
+syntax : print(*objectsv, sep='' , end='' , file='' , flush=)  
 * Objects : Variables ; if you want to write just a text , you can write your text inside " ".
 * sep : You can define the character print between objects. Default value = ' '
 * end : You can define the character print end of the last object. Default value = '\n'. This means new line.
 * file : You can define the file you want to print objects inside it.
 * flush : Flush is used to flush (clear) the internal buffer/stream (or we can say it is used to flush the output stream), it has two values "False" and "True". This description is kind of complex , you can understand with an example  
 
-*example1 :*  
-`from time import sleep`  
-`print("Hello", end=' ' , flush=False)`  
-`sleep(5)`  
-`print("World")`  
-#output : Hello was printed and World was printed after that without waiting  
+_example1 :_  
+```
+from time import sleep  
+print("Hello", end=' ' , flush=False)  
+sleep(5)  
+print("World")  
+#output : Hello was printed and World was printed after that without waiting
+```
 
-*example2 :*  
-`from time import sleep`  
-`print("Hello", end=' ' , flush=True)`  
-`sleep(5)`  
-`print("World")`  
+_example2 :_  
+```
+from time import sleep  
+print("Hello", end=' ' , flush=True)  
+sleep(5)  
+print("World")  
 #output : Hello was printed and World was printed after 5 seconds
-### **Python Variables**
-`x = 1`  
-This is a python variable. Variables keep its Values. value could be a number , a string , a character , a list...  
-
-*examples :*  
-
-`x = 1.5`  
-`y = "Hello World"`  
-`a , b , c = 10 , 20 , " Hi"`   
-`values : a = 10 , b = 20 , c = "Hi"`  
-`d = e = f = 10`  
-`values : d = 10 , e = 10 , f = 10`  
-`fruits = ["apple", "banana", "cherry"] #list`  
-`numbers = (1, 2, 3) #tuple`  
-`alphabets = {'a':'anything', 'b':'big', 'c':'curious'} #dictionary`  
-`vowels = {'a', 'e', 'i' , 'o', 'u'} #set`  
-
-**Multi-Line Statement**  
-You can create multi-line statements with () , [] , {}  
-`i = 1 + 2 + 3 + \`  
-    `4 + 5 + 6 + \`  
-    `7 + 8 + 9`  
-
-`i = (1 + 2 + 3 + `  
-    `4 + 5 + 6 + `  
-    `7 + 8 + 9)`
-
-`colors = ['red',`   
-          `'blue',`  
-          `'green']`
-
-`j = 100 ; f = 200 ; k = 300`  
-
-### **Comments**
-`# this is a one line comment`  
-`"""`  
-`this`  
-`is `  
-`multi-line`  
-`comment`  
-`"""`  
-### **Python Data Types**
+```
+## _Basic Input_  
+*variable* = input(*input message*)  
+example:
+```
+x = input("What is your name? : ")
+print(f"Hello {x}")
+```
+***
+# **Variables and Data Types**
 type() function shows data type
 example:  
-`x = 1;print(type(x))`  
-#output : <class 'int'>  
+```
+x = 1;print(type(x))  
+#output : <class 'int'>
+```   
 isinstance() funcstion returns True if object in  class.  
 example:   
-`print(isinstance(x,int))`  
-#output : True  
-#### **Numbers**
+```
+print(isinstance(x,int))  
+#output : True
+```
+## **Numbers**
 
 * integer = 1
 * float = 1.1
@@ -81,32 +56,32 @@ example:
 * octal = 0o476
 * hexadecimal = 0xF
 
-#### **Lists**
+## **Lists**
 Lists are collections of multiple variables. You can change the list you created , you can add or delete new items.  
 list1 = ["hello world",1,1.5]
 
-#### **Tuples**
+## **Tuples**
 Tuples are collections like lists but you can't change tuples. They are close to edit.  
 tuple1 = ("hello world",1,1.5)
 
-#### **Sets**
+## **Sets**
 Sets are unordered collections. Sets don't include same members.    
-`set1 = {1,2,2,3,3,3}`  
-`print(a)`  
+```
+set1 = {1,2,2,3,3,3}  
+print(a)  
 #output : {1,2,3}
-
-
-#### **Dictionaries**
+```
+## **Dictionaries**
 Dictionaries are collections that have key and value.  
  dict1 = {"key1":"value1","key2":"value1"}
 
 *I will write a detailed text about **lists** , **tuples** , **sets** and **dictionaries**.*
 
-#### **Strings**
+## **Strings**
 Strings are collections of characters that inside of " ".  
 "Hello World"
 
-#### Type Conversations
+## Type Conversations
 * float(5) = 5.0
 * int(5.6) = 5
 * int("5") = 5
@@ -115,46 +90,13 @@ Strings are collections of characters that inside of " ".
 * list((1,2,3,4,5)) = [1,2,3,4,5]
 * list("12345") = ["1","2","3","4","5"]
 * tuple([1,2,3,4,5]) = (1,2,3,4,5)
-* dict([1,2],[3,4],[5,' ']) = {1:2,3:4,5:''}
+* dict([1,2],[3,4],[5,' ']) = {1:2,3:4,5:''}  
 
+***
 
-### **Getting User Input**  
-*variable* = input(*input message*)  
-example:
-```
-x = input("What is your name? : ")
-print(f"Hello {x}")
-```
+# **Operators**  
 
-### **Importing Modules**
-```
-import math
-print(math.pi)
-```
-```
-from math import pi
-print(pi)
-```
-```
-import math as m
-print(m.pi)
-```
-```
-from math import pi as PI
-print(PI)
-```
-Also you can import your python module/file.
-if you have a file in another file , you can add it to default modules directory.
-```
-import sys
-sys.path.append(../moduledir)
-import module
-```
-In this example , you can import module module in moduledir directory of parent directory.
-
-### **Operators**  
-
-#### *Arithmetic Operators*
+## *Arithmetic Operators*
 * '+' : summary
 * '-' : subtraction
 * '*' : multiplication
@@ -163,7 +105,7 @@ In this example , you can import module module in moduledir directory of parent 
 * '//' : floor division
 * '**' : exponent  
 
-#### *Comparsion Operators*
+## *Comparsion Operators*
 * '>' : grater than
 * '<' : smaller than
 * '==' : equal to
@@ -171,12 +113,12 @@ In this example , you can import module module in moduledir directory of parent 
 * '<=' : smaller than or equal to
 * '!=' : not equal to
 
-#### *Logical Operators*
+## *Logical Operators*
 * 'and' = Logical and
 * 'or' = Logical or
 * 'not' = Logical not
 
-#### *Bitwise Operators*
+## *Bitwise Operators*
 * '&' : Bitwise and
 * '|' : Bitwise or
 * '~' : Bitwise not
@@ -184,7 +126,7 @@ In this example , you can import module module in moduledir directory of parent 
 * '>>': Bitwise right shift
 * '<<': Bitwise left shift
 
-#### *Assignment Operators*
+## *Assignment Operators*
 * '='
 * '+='
 * '-='
@@ -206,16 +148,31 @@ x = 10
 x **= 2
 print(x)
 #output = 100
-* x = x ** 2
+#x = x ** 2
 ```
 
-#### *Identity and Membership Operators*
+## *Identity and Membership Operators*
 * is = True if the operands are identical
 * is not = True if the operands are not identical
 * in = True if value/variable is found in the sequence
 * not in = True if value/variable is not found in the sequence
 
-### **Conditions**
+***
+
+# **Comments**
+```
+#this is one line comment
+"""
+this is
+multiple
+lines
+comment
+"""
+```
+
+***
+
+# **Conditions**
 ```
 if test statement:  
     <commands>
@@ -226,7 +183,10 @@ else :
     <commands that will work if any if statement doesn't work>
 ```
 **Don't forget , tab is very important.**
-### **Loops**
+
+***
+
+# **Loops**
 ```
 while statement:
     <commands>
@@ -236,72 +196,17 @@ for i in list:
 #everything that you did with i will do
 #for all elements of list.
 ```
-#### **Break , Continue and Pass**
+**Tabs are important again**
+## **Break , Continue and Pass**
 * break ends loops
 * continue skips commands under of it in a loop
 * Pass is a placeholder for empty statements
 
-### **Functions / Methods**
-A function do a specific task.
-Syntax:
-```
-def function_name(parameters):
-	"""docstring"""
-	<commands>
-```
-example:
-```
-def sayHello(str):
-    """
-    Just says hello to str
-    """
-    print(f"Hello {str}")
+***
 
-sayHello("Nicola")
-```
-and You can access docstring of function like this.
-`print(sayHello.__doc__)`
+# **Iterables**
 
-Functions can return anything
-```
-def square(x):
-    """
-    returns x**2
-    """
-    return x**2
-```
-You can work with no numbered arguments.
-```
-def summary(*numbers):
-    x = 0
-    for i in numbers:
-        x += i
-    return x
-print(summary(1,2,3,4,5))
-```
-#### **Recursion**
-If a function calls itself , it is a recursive function.
-```
-def fib(int):
-    if int <= 0:
-        return f"error , {int} is not an option."
-    elif int == 1:
-        return 1
-    elif int == 2:
-        return 1
-    else :
-        return fib(int-1)+fib(int-2)
-```
-#### **Lambda Functions**
-Syntax:
-`lambda argument : statement`
-example:
-```
-cube = lambda x : x**3
-print(cube(3))
-```
-
-### **Lists**
+## **Lists**
 * **list** = [0,1,2]
 * **list[0]** = 0
 * **list[-1]** = 2
@@ -316,7 +221,7 @@ print(cube(3))
 * **list.sort()** : sets indexes of members alphabetically
 * **list.revers()** : sets indexed of members revers.
 * **list.count(*member*)** : returns there is how many member elements in the list.
-* del list : deletes list
+* **del list** : deletes list
 
 ### **Tuples**
 * **tuple** = (1,2,3)
@@ -330,7 +235,8 @@ print(cube(3))
 * **tuple[0:2]** = (1,2)
 * **del tuple**  deletes tuple
 * **tuple.count(*member*)** : returns there is how many functions in the tuples
-* **tuple.index(*member*)** : returns index of member
+* **tuple.index(*member*)** : returns index of member   
+
 ### **Sets**
 * **set** = {1,2,3}
 * **set.add(*element*)** : adds an element
@@ -346,7 +252,8 @@ print(cube(3))
 * **A - B** : returns difference between A and B
 * **A.difference(B)** : returns difference
 * **A ^ B** : returns (A | B) - (A & B)
-* **A.symmetric_difference(B)** : returns (A | B) - (A & B)
+* **A.symmetric_difference(B)** : returns (A | B) - (A & B)  
+
 ### **Dictionaries**
 * **dict** = {'a':"apple",'b':"broadcast"}
 * **dict['a']** = "apple" #access
@@ -354,7 +261,7 @@ print(cube(3))
 * **dict.pop(a)** : deletes a and returns key
 * **dict.clear()** : deletes all elements
 * **del dict** : deletes dict
-*Membership tests are done in keys ,  iterating through is done in values*
+_Membership tests are done in keys ,  iterating through is done in values_
 
 
 ### **Strings**
@@ -391,123 +298,146 @@ print(cube(3))
 * **str.find('a')** : finds and says index in the str
 * **str.find("a")** : finds and says index in the str but searches right to left
 * **str.join("x")** : adds x between all of characters
-* **str.strip()** : deletes characters like space and /n at right and left( there is functions like str.lstrip() and str.rstrip)
-*if you make a variable as str , you can get an error , these are placeholder.*
-### **File Handling**
+* **str.strip()** : deletes characters like space and /n at right and left( there is functions like str.lstrip() and str.rstrip)  
+_if you make a variable as str , you can get an error , these are placeholder._
 
-Opening file in current directory:  
-* f = open("text.txt")
-* with open("text.txt") as f
-
-Opening file in another directory:  
-* f = open("**dir**/text.txt")
-* with open("**dir**/text.txt") as f  
-
-f = open(**file**,**mode**,encoding=)
-**Modes**
-* r : reading mode
-* w : writing mode , if there is no file , it will be created.
-* x : exclusive creation
-* a : appending mode
-* t : text mode ( default )
-* b : binary mode
-* +: Open file for reading and writing
-* r+ : reading and writing
-* w+ : writing and reading
-* a+ : appending and reading
-
-**Some Other Functions**
-**f.close()** : close the file  
-**f.read()** : reads all of file as a string  
-**f.readlines()** : reads lines as list  
-**f.write(*str*)** : writes to file  
-**f.writelines(*str*)** : writes  to file every member is one line
-
-### **Exception Handling**
-* Syntax Error  
-* Logical Errors ( Exception )  
-
-You can catch exceptions and you can block ending of program.
-```
-x = int(input("enter a number"))
-try :
-    print(2520 / x)
-except:
-    print("You entered a wrong number")
-finally:
-    #you can wwrite last commands here , this is
-    #optional
-```
-You can define your errors
-```
-# define Python user-defined exceptions
-class Error(Exception):
-    """Base class for other exceptions"""
-    pass
-
-
-class ValueTooSmallError(Error):
-    """Raised when the input value is too small"""
-    pass
-
-
-class ValueTooLargeError(Error):
-    """Raised when the input value is too large"""
-    pass
-
-
-# you need to guess this number
-number = 10
-
-# user guesses a number until he/she gets it right
-while True:
-    try:
-        i_num = int(input("Enter a number: "))
-        if i_num < number:
-            raise ValueTooSmallError
-        elif i_num > number:
-            raise ValueTooLargeError
-        break
-    except ValueTooSmallError:
-        print("This value is too small, try again!")
-        print()
-    except ValueTooLargeError:
-        print("This value is too large, try again!")
-        print()
-
-print("Congratulations! You guessed it correctly.")
-```
-### **OOP**
-#### **Defining Class**
-```
-class worker:
-	pass
-```
-#### **Defining Object**
-```
-Bob = worker()
-
-```
-_Example_
-```
-class worker:
-	#attributes
-	salary = 0
-	
-	#initializer function
-	def __init__(self,salary):
-		self.salary = salary
-
-	def setsalary(self,salary):
-		self.salary = salary
-	def getsalary(self):
-		return self.salary
-Bob = Worker(8500)
-Bob.setsalary(7500)
-print(Bob.getsalary())
-#output : 7500
-```
 ***
 
-Websites i used :  
-* [Programiz](https://www.programiz.com/)
+# **Importing Modules**
+```
+import math
+print(math.pi)
+```
+```
+from math import pi
+print(pi)
+```
+```
+import math as m
+print(m.pi)
+```
+```
+from math import pi as PI
+print(PI)
+```
+Also you can import your python module/file.
+if you have a file in another file , you can add it to default modules directory.
+```
+import sys
+sys.path.append(../moduledir)
+import module
+```
+In this example , you can import module module in moduledir directory of parent directory.
+
+# **Functions**
+```
+def func(parameter):
+    codes
+
+func(parameter) # calling function
+```
+example:
+```
+def sum(num1 , num2):
+    return num1 + num2
+```
+**return** is value of function.
+
+WE can create default arguments:
+```
+def sum(num1 = 0 , num2 = 0):
+    return num1 + num2
+```
+You can define function for limitless arguments like this.
+```
+def sum(*nums):
+    result = 0
+    for i in nums:
+        result += i
+    return result
+print(sum(1,2,3,4,5,6,7,8,9))
+```
+and you can define it with keyword arguments
+```
+def sum(**nums):
+    result = 0
+    for i in nums:
+        result += i
+    return result
+print(sum(num1=1,num1=2))
+```
+## **Specials Parameters**
+you can give permission for parameter usage like this
+def func(positional_parameters,/,pst_or_kwd_parameters,*,kwd parameters)
+example :
+```
+def sum(num1,num2,/):
+    return num1 + num2
+```
+if you call the function like this sum(num1=1,num2=2) , you will get error
+
+## **Unpacking**
+```
+def sum(*args):
+    result = 0
+    for i in args:
+        result += i
+    return result
+numbers = [1,2,3,4,5,6,7,8,9]
+```
+If you write sum(numbers) , you will get error. You have to write sum(*numbers). If you want to do same thing with a dictioary , you have to use double asteriks symbol.
+
+## **Lambda Expressions**
+```
+name = lambda arguments : expression
+```
+
+example:
+```
+sum = lambda a,b : a+b
+print(sum(10,20))
+
+```
+## **Annotations**
+```
+def func(parameter:'annotations'=default-value):
+    
+```
+Annotation is a definion about parameters.
+example:
+```
+def sum(num1 : int = 0 , num2 : int = 0):
+    return num1 + num2
+print(sum.__annotations__)
+#output
+#Annotations : {'num1' : <class 'int'>,'num2' : <class 'int'>}
+```
+## **Function Docstrings**
+```
+def func(parameters):
+    """
+    definion about function
+    """
+```
+This is a definion about function.
+example:
+```
+def sum(*args=0,):
+    """
+    Returns summary of numbers that you gave as parameters. If you
+    don't give any parameters , that returns 0
+    """
+    result = 0
+    for i in args:
+        result += i
+    return result
+print(sum.__doc__)
+```
+# **File Handling**
+variable = open('filename','mode')
+## **File methods**
+f.read() : reads entire file , returns string
+f.readline() : reads lines one-by-one at everytime you call the function , returns string
+f.readlines() : reads lines appends every line to a list and returns list.
+f.write(str) : writes str to file
+f.writelines(list) : writes list to lines in file
