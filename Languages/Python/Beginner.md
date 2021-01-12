@@ -436,8 +436,8 @@ print(sum.__doc__)
 # **File Handling**
 variable = open('filename','mode')
 ## **File methods**
-f.read() : reads entire file , returns string
-f.readline() : reads lines one-by-one at everytime you call the function , returns string
-f.readlines() : reads lines appends every line to a list and returns list.
-f.write(str) : writes str to file
-f.writelines(list) : writes list to lines in file
+f.read() : reads entire file , returns string  
+f.readline() : reads lines one-by-one at everytime you call the function , returns string  
+f.readlines() : reads lines appends every line to a list and returns list.  
+f.write(str) : writes str to file  
+f.writelines(list) : writes list to lines in file  
